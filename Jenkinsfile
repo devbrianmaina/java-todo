@@ -34,7 +34,7 @@ pipeline {
             }
         }
     }
-    post {
+   /* post {
         success {
             slackSend color: "good", message: "Build #${BUILD_NUMBER} ran successfully"
         }
@@ -42,5 +42,5 @@ pipeline {
         failure {
             slackSend color: "danger", message: "Build #${BUILD_NUMBER} failed"
         }
-    }
+    } */
 }
